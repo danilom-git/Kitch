@@ -1,0 +1,10 @@
+package rules;
+
+import kitch.model.Customer;
+
+rule "Greetings, Customer"
+	when
+		$c: Customer(  )
+	then
+		System.out.println("Greetings, " + $c.getEmail());
+end
